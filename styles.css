@@ -1,0 +1,147 @@
+/* Global styles */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  header {
+    background-color: darkred;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0 0 30px black;
+    color: white;
+  h1 {
+    font-size: 150px;
+   }
+  }
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the menu items horizontally */
+  }
+  
+  li {
+    margin-right: 15px;
+    position: relative;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown {
+    display: none;
+    position: relative;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown a {
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  li:hover .dropdown {
+    display: block;
+  }
+  
+  main {
+    max-width: 100%;
+    min-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: darkred;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+  
+  p {
+    border-radius: 10px;
+    position: center;
+    Background-color: #333;
+    font-size: 25;
+    width: 65%;
+    box-shadow: 0 0 10px white;
+    text-shadow: 0 0 15px black;
+  }
+
+  img {
+    max-width: 100%;
+    width: 75%;
+    height: auto;
+    border: 1px solid black;
+  }
+  
+  #footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  
+/* Hamburger menu styles */
+  .menu-toggle {
+    display: none; /* Initially hide on larger screens */
+    cursor: pointer;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .submenu {
+    display: none;
+  }
+  
+  /* Media query for small screens */
+  @media screen and (max-width: 600px) {
+    .menu-toggle {
+      display: block; /* Show on small screens */
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+    }
+  
+    .submenu {
+      display: block;
+    }
+  }
+  
