@@ -38,6 +38,7 @@ body {
   li {
     margin-right: 15px;
     position: relative;
+    background-color: #555;
   }
   
   a {
