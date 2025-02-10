@@ -117,6 +117,8 @@ body {
   
   .menu li {
     margin: 0 15px;
+    border-radius: 10px;
+    border: inset;
   }
   
   .submenu {
